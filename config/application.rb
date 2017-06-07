@@ -26,7 +26,9 @@ module CanvasRailsTemplate
 
     config.paths['config/routes.rb'].concat Dir[Rails.root.join("config/routes/admin.rb")]
 
+    # config.browserify_rails.paths = [/app\/assets\/javascripts\//, /node_modules\//]
     config.browserify_rails.commandline_options = "-t babelify"
+    # config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 ] --extensions .js ]"
 
     config.middleware.use Rack::Deflater
   end

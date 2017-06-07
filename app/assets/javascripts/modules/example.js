@@ -21,6 +21,7 @@ const example = () => {
   // ------------------------------------------------
   const setUpResponsive = () => {
     console.log('set up responsive');
+    debugger
     return {
       'sm' : disable,
       'md' : disable,
@@ -44,6 +45,8 @@ const example = () => {
     // Add your event handlers here
     console.log('enable');
     launchExample();
+    console.log(window.Project)
+    debugger
 
     props.isEnabled = true;
 

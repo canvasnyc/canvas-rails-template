@@ -1,16 +1,15 @@
-// Import all modules
+// Page Controllers
 // _______________________________________________
-import breakpoint     from '../utilities/breakpoint';
-import example        from '../modules/example';
 
 // Controller Generation
-import { controller } from '../utilities/savnac';
+import { controller } from 'savnac';
+
+// Import all modules
+import example        from '../modules/example';
 
 // Create Controllers
 // _______________________________________________
-const universal = controller({
-  breakpoint
-});
+const universal = controller({});
 
 const pages_homepage = controller({
   example
