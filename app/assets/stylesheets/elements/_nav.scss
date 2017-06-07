@@ -1,0 +1,29 @@
+.nav {
+  padding: 10px 40px;
+  text-align: center;
+  border-bottom: 1px solid $black;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.nav__list__item {
+  text-transform: uppercase;
+  border: 1px solid $black;
+  border-radius: 5px;
+
+  a {
+    display: block;
+    padding: 20px;
+  }
+
+  &.is-active {
+    background-color: $aquamarine;
+  }
+}

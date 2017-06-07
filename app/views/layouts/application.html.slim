@@ -52,5 +52,10 @@ html lang="en"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
+    = render "shared/head-scripts"
+
   body data-js-router="#{controller_name}_#{action_name}"
-    = yield
+    = render "shared/nav"
+    .body-content
+      = yield
+    = render "shared/footer"

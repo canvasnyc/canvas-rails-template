@@ -22,4 +22,11 @@ require('babel-polyfill');
 document.addEventListener('turbolinks:load', () => {
   window.Project = window.Project || require('./main').default();
   window.Project.init();
+
+  const page = document.location.pathname
+  ga('set', 'page', page);
+
+  // Sending the pageview no longer requires passing the page
+  // value since it's now stored on the tracker object.
+  ga('send', 'pageview');
 });

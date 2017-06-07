@@ -1,0 +1,8 @@
+nav.nav
+  ul.nav__list
+    li class="nav__list__item #{'is-active' if current_page? homepage_path}"
+      = link_to 'Home', homepage_path
+    li class="nav__list__item #{'is-active' if current_page? about_path}"
+      = link_to 'About', about_path
+    li class="nav__list__item #{'is-active' if current_page? contact_path}"
+      = link_to 'Contact', contact_path
