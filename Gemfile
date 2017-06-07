@@ -58,7 +58,7 @@ gem 'kgio'
 gem 'lograge'
 gem 'puma'
 gem 'rack-cache', :require => 'rack/cache'
-# gem 'rack-timeout'
+gem 'rack-timeout'
 
 # Error Tracking
 gem 'honeybadger'
