@@ -18,7 +18,7 @@ const pages_homepage = controller({
 });
 
 const pages_about = controller({
-  gaClick
+  // gaClick
 })
 
 // Export Controllers
