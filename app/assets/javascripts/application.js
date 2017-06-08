@@ -29,4 +29,9 @@ document.addEventListener('turbolinks:load', () => {
   // Sending the pageview no longer requires passing the page
   // value since it's now stored on the tracker object.
   ga('send', 'pageview');
+
+  // dataLayer.push({
+  //   'event':'pageView',
+  //   'virtualUrl': window.location.href
+  // });
 });
