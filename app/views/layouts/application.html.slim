@@ -55,6 +55,9 @@ html lang="en"
     = render "shared/head-scripts"
 
   body data-js-router="#{controller_name}_#{action_name}"
+    noscript
+      iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5PGDXP" height="0" width="0" style="display:none;visibility:hidden"
+
     = render "shared/nav"
     .body-content
       = yield
